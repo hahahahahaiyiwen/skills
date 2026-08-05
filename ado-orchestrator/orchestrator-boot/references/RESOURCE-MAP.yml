@@ -1,22 +1,22 @@
 organization:
-  name: msazure
-  url: https://msazure.visualstudio.com
+  name: <organization-name>
+  url: <organization-url>
   project:
-    name: Azure AppConfig
-    url: https://msazure.visualstudio.com/Azure%20AppConfig
+    name: <project-name>
+    url: <project-url>
   board:
-    area: Azure AppConfig\Microservice
-    assigned_to: haiyiwen@microsoft.com
+    area: <board-area>
+    assigned_to: <assigned-to>
 
 repos:
-  ResourceProvider.Agent:
-    path: repos/ResourceProvider.Agent
-    git: https://msazure.visualstudio.com/Azure%20AppConfig/_git/ResourceProvider.Agent
-    ado_repo: ResourceProvider.Agent
-    desc: ResourceProvider.Agent service
-    lang: C#
+  <repo-name>:
+    path: repos/<repo-name>
+    git: <repo-git-url>
+    ado_repo: <ado-repo-name>
+    desc: <repo-description>
+    lang: <repo-language>
     status: active
-    target_branch: dev
+    target_branch: <target-branch>
 
 infrastructure:
   databases: none

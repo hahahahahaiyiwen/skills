@@ -1,0 +1,27 @@
+organization:
+  name: msazure
+  url: https://msazure.visualstudio.com
+  project:
+    name: Azure AppConfig
+    url: https://msazure.visualstudio.com/Azure%20AppConfig
+  board:
+    area: Azure AppConfig\Microservice
+    assigned_to: haiyiwen@microsoft.com
+
+repos:
+  ResourceProvider.Agent:
+    path: repos/ResourceProvider.Agent
+    git: https://msazure.visualstudio.com/Azure%20AppConfig/_git/ResourceProvider.Agent
+    ado_repo: ResourceProvider.Agent
+    desc: ResourceProvider.Agent service
+    lang: C#
+    status: active
+    target_branch: dev
+
+infrastructure:
+  databases: none
+  cache: none
+  deploy:
+    method: dotnet package
+    trigger: release
+    provider: manual

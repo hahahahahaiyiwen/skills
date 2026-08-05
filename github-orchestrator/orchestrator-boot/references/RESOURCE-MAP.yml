@@ -1,0 +1,24 @@
+organization:
+  name: <organization-name>
+  url: <organization-url>
+  project_board:
+    number: <project-board-number>
+    url: <project-board-url>
+
+repos:
+  <repo-name>:
+    path: repos/<repo-name>
+    git: <repo-git-url>
+    desc: <repo-description>
+    lang: <repo-language>
+    status: active
+    worktrees:
+      convention: "repos/<repo-name>-<feature-name>"
+
+infrastructure:
+  databases: none
+  cache: none
+  deploy:
+    method: dotnet package
+    trigger: release
+    provider: manual
